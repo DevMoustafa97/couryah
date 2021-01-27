@@ -1,1 +1,136 @@
+// import Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// import fontawesome icons
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// ng-select styles
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+// @import "~@ng-select/ng-select/themes/material.theme.css";
+
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$couryah-primary: mat-palette($mat-indigo);
+$couryah-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$couryah-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$couryah-theme: mat-light-theme((
+  color: (
+    primary: $couryah-primary,
+    accent: $couryah-accent,
+    warn: $couryah-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($couryah-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+// Global reset
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+
+// filter mixin 
+@mixin order-status {
+  border-radius: 6px;
+  height: 30px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.ng-select .ng-select-container {
+  border:none;
+  background-color: #F4F5F6;
+  outline: none !important;
+  text-transform: capitalize; 
+}
+.ng-option {
+  text-transform: capitalize;
+}
+.ng-value {
+  border-radius: 6px !important;
+  height: 30px !important;
+  font-size: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: capitalize !important;
+  flex-direction: row-reverse!important;
+  font-weight: 500 !important;
+  background-color: #F4F5F6 !important;
+}
+.ng-value > span {
+  border: none !important;
+
+}
+
+.ng-select-container .ng-has-value {
+  outline: none;
+}
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container {
+  flex-wrap: nowrap;
+  min-width: 100px;
+  background-color: #F4F5F6;
+}
+
+// #ngb-nav-0-panel > div > ng-select > div > span.ng-arrow-wrapper > span {
+//   display: none;
+// }
+// #ngb-nav-0-panel > div > ng-select > div > span.ng-arrow-wrapper::after {
+//   content: "";
+//   width: 15px;
+//   height: 15px;
+//   top: 0;
+//   left: 0;
+//   display: block;
+//   background-color: red;
+// }
+
+// table styling
+.mat-elevation-z8 {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color:#F26C29 !important;
+
+
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left:hover {
+  background-color: inherit !important;
+}
