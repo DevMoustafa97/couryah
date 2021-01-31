@@ -134,3 +134,33 @@ body { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif; }
 .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left:hover {
   background-color: inherit !important;
 }
+
+// checkbox 
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background { 
+  background-color: #F26C29;
+}
+
+.mat-checkbox .mat-checkbox-ripple {
+  display: none;
+}
+
+// last table
+
+.mat-sort-header-content{
+font: normal normal 600 14px/18px Montserrat;
+  color:#778799;
+}
+
+
+// paginator
+
+.mat-paginator-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start !important;
+  position: relative;
+}
+
+.mat-paginator-range-actions  {
+
+}

@@ -5,9 +5,9 @@ import {MatTableDataSource} from '@angular/material/table';
 
 
 export interface Order {
-  id: number;
-  createdAt: string;
-  status: string;
+  id: number,
+  createdAt: string,
+  status: string,
   driver: {
     name:string,
     phone:string,
@@ -91,7 +91,7 @@ const ELEMENT_DATA: Order[] = [
 })
 
 export class OrdersComponent implements OnInit {
-  displayedColumns: string[] = ['Order ID', 'Created at', 'Status', 'Driver', 'Customer','Action'];
+  displayedColumns: string[] = [ 'select','id', 'createdAt', 'Status','driver','customer','action'];
   dataSource = new MatTableDataSource<Order>(ELEMENT_DATA);
   selection = new SelectionModel<Order>(true, []);
 

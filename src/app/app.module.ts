@@ -18,6 +18,9 @@ import { OrdersComponent } from './orders/orders.component';
 // material table
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { OrdersTableComponent } from './orders-table/orders-table.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     NavbarComponent,
     TableComponent,
     OrdersComponent,
+    OrdersTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     NgSelectModule,
     FormsModule,
     MatCheckboxModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
