@@ -69,6 +69,7 @@ img {
   font: normal normal 600 13px/16px Montserrat;
   letter-spacing: 0.39px;
   color: #373E47;
+  margin: auto 0;
 }
 
 .driver, .customer {
@@ -107,14 +108,17 @@ img {
 .new {
   background-color: #FEF0E9;
   color:#F26C29;
+  margin: auto 0;
 }
 .cancelled {
   background-color: #70070012;
   color:#700700;;
+  margin: auto 0;
 }
 .delivered {
   background-color: #F2FBEE;
   color:#7ED959;
+  margin: auto 0;
 }
 
 // checkbox
@@ -134,4 +138,9 @@ img {
 .mat-paginator-container {
   display: flex;
   justify-content: space-between;
+}
+
+// selected item
+.selected-item {
+  background-color: #7ED959;
 }

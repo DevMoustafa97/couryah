@@ -2,9 +2,10 @@
     font-family: "Montserrat";
     height: 100vh;
     width: 100vw;
+
     ul {
         background-color: #F9F9FA;
-        min-width: 180px;
+        min-width: 191px;
         align-items: center;
         padding:10px 0px;
         li {
@@ -14,11 +15,14 @@
             justify-content: center;
             font-weight: 600;
             font-size: 14px;
+            margin:10px 0;
+            height: 40px;
         }
         li svg {
             display: inline-block;
-            width: 18px;
+            width: 24px;
             margin-right: 15px;
+            margin-left: 10px;
         }
         li a {
             display: flex;
@@ -31,10 +35,10 @@
             // padding-right: 0 ;
             width: 100%;
         }
-        
-        
     }
-    
+    .tab-content {
+        flex-grow:1;
+    }
 }
 
 span {
@@ -45,7 +49,13 @@ span {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    padding-top: 3px;
+    width: 22px;
+    height: 15px;
+    padding-top: 4px;
+    text-align: center;
+    font: normal normal 400 9px/8px Montserrat;
+    letter-spacing: 0.27px;
+    color: #FFFFFF;
 }
 
 .active {
@@ -60,9 +70,9 @@ a:not(.active) + span {
 .active::after {
     content: " ";
     width: 4px;
-    height: 100%;
+    height: 40px;
     top: 0;
-    left: 0;
+    left: 1px;
     display: block;
     position: absolute;
     background-color: #F26C29;

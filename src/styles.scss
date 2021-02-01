@@ -125,11 +125,11 @@ body { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif; }
 
 
 
-.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
-  background-color:#F26C29 !important;
+// .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+//   background-color:#F26C29 !important;
 
 
-}
+// }
 
 .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left:hover {
   background-color: inherit !important;
@@ -155,12 +155,47 @@ font: normal normal 600 14px/18px Montserrat;
 // paginator
 
 .mat-paginator-container {
+  font: normal normal medium 12px/15px Montserrat;
+  color: #616E7D;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start !important;
   position: relative;
+  .mat-paginator-range-actions {
+    position: relative;
+    width: auto;
+    flex-grow: 1; /* default 0 */
+    justify-content: flex-end;
+    margin-right: 8%;
+    .mat-paginator-range-label{
+      margin-right: auto;
+    }
+  }
 }
 
-.mat-paginator-range-actions  {
+.mat-select-trigger {
+  font: normal normal 600 14px/18px Montserrat !important; 
+}
+.mat-select-value-text {
+  color: #373E47 !important;
+}
+
+.mat-select-arrow {
+  display: block;
+  border-left: none !important;
+  border-right: none !important;
+}
+.mat-select-arrow::after {
+  content: url("assets/icons/angle-down-solid.svg");
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  left: -10px;
+  background-color:transparent;
+}
+
+.mat-select-arrow-wrapper {
 
 }
